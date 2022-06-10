@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::ECS::Service
+      Properties:
+        TaskDefinition: "<TASK_DEFINITION>"
+        LoadBalancerInfo:
+            ContainerName: "php-sample" ##適切な名前に置き換えてください
+            ContainerPort: "80" ##適切なポート番号に置き換えてください
