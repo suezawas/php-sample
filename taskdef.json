@@ -18,25 +18,25 @@
         }
       ],
       "image": "<IMAGE1_NAME>",
-      "name": "php-sample"
-    }
-  ],
-  "secrets": [
-    {
-      "valueFrom": "DB_HOST",
-      "name": "DB_HOST"
-    },
-    {
-      "valueFrom": "DB_NAME",
-      "name": "DB_NAME"
-    },
-    {
-      "valueFrom": "DB_PW",
-      "name": "DB_PW"
-    },
-    {
-      "valueFrom": "DB_USER",
-      "name": "DB_USER"
+      "name": "php-sample",
+      "secrets": [
+        {
+          "valueFrom": "/DB/HOST",
+          "name": "DB_HOST"
+        },
+        {
+          "valueFrom": "/DB/NAME",
+          "name": "DB_NAME"
+        },
+        {
+          "valueFrom": "/DB/PW",
+          "name": "DB_PW"
+        },
+        {
+          "valueFrom": "/DB/USER",
+          "name": "DB_USER"
+        }
+      ]
     }
   ],
   "memory": "512",
