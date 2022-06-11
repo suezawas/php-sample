@@ -3,7 +3,7 @@
     $dbName = getenv('DB_NAME');
     $dbUSER = getenv('DB_USER');
     $dbPW = getenv('DB_PW');
-    $redisHost = getenv('DB_PW');
+    $redisHost = getenv('REDIS_HOST');
     $result = "";
     if (isset($_POST['db'])) {
         // データベースに接続
