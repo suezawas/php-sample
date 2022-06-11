@@ -3,6 +3,7 @@
     $dbName = getenv('DB_NAME');
     $dbUSER = getenv('DB_USER');
     $dbPW = getenv('DB_PW');
+    $redisHost = getenv('DB_PW');
     $result = "";
     if (isset($_POST['db'])) {
         // データベースに接続
@@ -31,7 +32,7 @@
     elseif (isset($_POST['redis'])) {
         // Redisに接続
       $redis = new Redis();
-      $redis->connect('sample-php-public-001.cpgawl.0001.apne1.cache.amazonaws.com', 6379);
+      $redis->connect($redisHost, 6379);
       // 値を設定
       $redis->set('key', 'value');
       // 値を取得
