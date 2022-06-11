@@ -21,6 +21,24 @@
       "name": "php-sample"
     }
   ],
+  "secrets": [
+    {
+      "valueFrom": "DB_HOST",
+      "name": "DB_HOST"
+    },
+    {
+      "valueFrom": "DB_NAME",
+      "name": "DB_NAME"
+    },
+    {
+      "valueFrom": "DB_PW",
+      "name": "DB_PW"
+    },
+    {
+      "valueFrom": "DB_USER",
+      "name": "DB_USER"
+    }
+  ],
   "memory": "512",
   "taskRoleArn": "arn:aws:iam::837152662068:role/ecsTaskExecutionRole",
   "compatibilities": [
