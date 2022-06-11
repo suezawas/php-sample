@@ -39,6 +39,10 @@
         {
           "valueFrom": "/REDIS/HOST",
           "name": "REDIS_HOST"
+        },
+        {
+          "valueFrom": "/REDIS/PW",
+          "name": "REDIS_PW"
         }
       ]
     }

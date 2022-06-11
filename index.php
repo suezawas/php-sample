@@ -4,6 +4,7 @@
     $dbUSER = getenv('DB_USER');
     $dbPW = getenv('DB_PW');
     $redisHost = getenv('REDIS_HOST');
+    $redisPW = getenv('REDIS_PW');
     $result = "";
     if (isset($_POST['db'])) {
         // データベースに接続
@@ -32,7 +33,7 @@
     elseif (isset($_POST['redis'])) {
         // Redisに接続
       $redis = new Redis();
-      $redis->connect($redisHost, 6379);
+      $redis->connect($redishost,6379,5,NULL, 0, 0, ['auth' => $redisPW]);
       // 値を設定
       $redis->set('key', 'value');
       // 値を取得
