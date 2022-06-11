@@ -33,7 +33,7 @@
     elseif (isset($_POST['redis'])) {
         // Redisに接続
       $redis = new Redis();
-      $redis->connect($redishost,6379,5,NULL, 0, 0, ['auth' => $redisPW]);
+      $redis->connect($redisHost,6379,5,NULL, 0, 0, ['auth' => $redisPW]);
       // 値を設定
       $redis->set('key', 'value');
       // 値を取得
