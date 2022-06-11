@@ -3,7 +3,7 @@
     $dbName = getenv('DB_NAME');
     $dbUSER = getenv('DB_USER');
     $dbPW = getenv('DB_PW');
-    $redisHost = getenv('REDIS_HOST');
+    $redisHost = 'tls://' . getenv('REDIS_HOST');
     $redisPW = getenv('REDIS_PW');
     $result = "";
     if (isset($_POST['db'])) {
