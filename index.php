@@ -31,7 +31,7 @@
     elseif (isset($_POST['redis'])) {
         // Redisに接続
       $redis = new Redis();
-      $redis->connect('127.0.0.1', 6379);
+      $redis->connect('sample-php-public-001.cpgawl.0001.apne1.cache.amazonaws.com', 6379);
       // 値を設定
       $redis->set('key', 'value');
       // 値を取得
