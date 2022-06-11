@@ -35,6 +35,10 @@
         {
           "valueFrom": "/DB/USER",
           "name": "DB_USER"
+        },
+        {
+          "valueFrom": "/REDIS/HOST",
+          "name": "REDIS_HOST"
         }
       ]
     }
